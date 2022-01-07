@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em){
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #title{
+        font-size: 4em;
+        margin-top: 50px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        max-width: 150px;
+    }
+}
+

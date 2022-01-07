@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
 p, h1, h2, li {
     font-family: 'Architects Daughter', cursive;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 header, footer {
@@ -15,14 +8,12 @@ header, footer {
     text-align: center;
     margin: 10px;
     border-radius: 10px;
-    
 }
 
 header, footer, main {
     max-width: 650px;
     padding: 5px 30px;
 }
-
 
 header, body, main, footer {
     margin-left: auto;
@@ -42,16 +33,15 @@ footer a {
 }
 
 img {
-    max-width: 150px;
+    max-width: 180px;
     border-radius: 6px;
     box-shadow: 5px 5px  #13121244;
-    margin: 20px 20px;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    margin: 40px 40px;
 }
 
 #title {
-    margin-top: 65px;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    font-family: 'The Nautigal', cursive;
+    font-size: 3.5em;
+    margin-top: -100px;
+    
 }
