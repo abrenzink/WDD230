@@ -1,0 +1,12 @@
+@media only screen and (min-width: 60em) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main div:nth-child(3){
+        grid-column: span 1;
+    }
+
+
+}

@@ -1,0 +1,47 @@
+
+header h1, header h2{
+    background-color: rebeccapurple;
+    color:seashell;
+    padding: 15px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1, h2, h3{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rebeccapurple;
+}
+
+img{
+    max-width: 90%;
+}
+
+p{
+    margin: 15px;
+    font-size: small;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    background-color: seashell;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item{
+    margin: 15px;
+    background-color: seashell;
+    border-radius: 5px;
+}
+
+
