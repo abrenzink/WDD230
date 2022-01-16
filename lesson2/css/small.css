@@ -1,9 +1,14 @@
 
-header h1, header h2{
+header h1, header h2, footer{
     background-color: rebeccapurple;
     color:seashell;
     padding: 15px;
     font-family: 'Abril Fatface', cursive;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
 }
 
 h1, h2, h3{
@@ -43,5 +48,4 @@ main div{
     background-color: seashell;
     border-radius: 5px;
 }
-
 
