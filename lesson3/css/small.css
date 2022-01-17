@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.title {
+	margin: 20px;
+    text-align: center;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+nav div {
+    margin: 10px;
+    flex: 1 1 100%;
+    background-color: snow;
+}
+
+nav a {
+	display: block;
+	color: rgb(48, 24, 158);
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+.active {
+	background-color: rgb(243, 255, 72);
+}
+
+h2 {
+	text-align: center;
+	margin: 50px;
+}	
+
+li{ 
+	text-align: center;
+	max-width: 80%;
+	margin: 15px auto;
+	list-style: none;
+}
+
+img {
+	max-width: 10%;
+}
