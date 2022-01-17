@@ -10,4 +10,8 @@
 	nav a {
 		font-size: 1.3rem;
 	}
+
+    img {
+        max-width: 20%;
+    }
 }
