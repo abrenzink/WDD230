@@ -6,4 +6,8 @@
     main div:nth-child(3){
         grid-column: span 2;
     }
+
+    img{
+        max-width: 300px;
+    }
 }
