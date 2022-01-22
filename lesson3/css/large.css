@@ -1,17 +1,19 @@
 @media (min-width: 48em) {
-    nav{
-        justify-content: space-around;
+    body{
+        max-width: 85%;
+        margin: auto;
     }
 
-    nav div {
-        max-width: 20%;
-    }
-
-	nav a {
-		font-size: 1.3rem;
+    h1{
+		font-size: 3em;
 	}
 
-    img {
-        max-width: 20%;
-    }
+  .personas{
+		flex-direction: row;
+	}
+
+  .colors{
+    flex-wrap: nowrap;
+  }
+
 }

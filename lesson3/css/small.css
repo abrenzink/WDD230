@@ -4,35 +4,69 @@
 	box-sizing: border-box;
 }
 
-.title {
-	margin: 20px;
-    text-align: center;
+body{
+	margin: auto;
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+}
+
+
+header{
+	background-color: rgb(0, 0, 0);
+	padding-top: 5px;
+}
+
+
+h1{
+	margin-left: 40px;
+}
+
+.title{
+	color: snow;
+	margin: 20px auto;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	max-width: 85%;
+	max-height: 60%;
+	justify-content: space-around;
+}
+
+.title img{
+	border-radius: 200px;
+	background-color: snow;
 }
 
 nav {
 	display: flex;
 	flex-direction: column;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+	align-items: center;
 }
 
 nav div {
-    margin: 10px;
     flex: 1 1 100%;
-    background-color: snow;
+	width: 100%;
+    background-color: rgba(231, 231, 231, 0.698);
 }
 
 nav a {
 	display: block;
-	color: rgb(48, 24, 158);
+	color: rgb(0, 0, 0);
 	text-align: center;
-	padding: 15px;
+	padding: 10px;
 	text-decoration: none;
-	font-size: 0.9rem;
+	font-size: 1.3rem;	
 }
 
 .active {
-	background-color: rgb(243, 255, 72);
+	background-color: rgb(255, 255, 255);
+}
+
+nav div:hover {
+    flex: 1 1 100%;
+	width: 100%;
+    background-color: rgba(255, 255, 255, 0.698);
 }
 
 h2 {
@@ -41,12 +75,78 @@ h2 {
 }	
 
 li{ 
-	text-align: center;
 	max-width: 80%;
 	margin: 15px auto;
 	list-style: none;
 }
 
-img {
-	max-width: 50%;
+img{
+	max-width: 150px;
+}
+
+p{
+	max-width: 80%;
+	margin: 20px auto;
+}
+
+.personas{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 25px;
+}
+
+.persona1, .persona2{
+	padding: 15px;
+}
+
+.colors{
+	max-width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	font-size: large;
+	padding: 20px;
+}
+
+.color1{
+	background-color: #762107;
+	padding: 50px 20px;
+	color: snow;
+}
+
+.color2{
+	background-color: #fffafa;
+	padding: 50px 20px;
+}
+
+.color3{
+	background-color: #65A147;
+	padding: 50px 20px;
+}
+
+.color4{
+	background-color: #ACCE22;
+	padding: 50px 20px;	
+}
+
+.color5{
+	background-color: #A82E09;
+	padding: 50px 20px;
+	color: snow;
+}
+
+#marilza, #heleno{
+	display: block;
+	max-width: 100%;
+	margin: -30px auto 30px auto;
+}
+
+footer{
+	padding: 50px;
+	text-align: center;
+	font-size: large;
+	color: snow;
+	background-color: rgb(0, 0, 0);
 }
