@@ -143,6 +143,20 @@ p{
 	margin: -30px auto 30px auto;
 }
 
+.typo{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.font1{
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+.font2{
+	font-family: 'Cormorant', serif;
+}
+
 footer{
 	padding: 50px;
 	text-align: center;
