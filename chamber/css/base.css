@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background-color: #762107;
+	width: 100%;
+	color: snow
+}
+
+.logo img{
+	background-color: snow;
+	border-radius: 150px;
+	margin: 20px;
+	max-width: 8%;
+	float: left;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+nav li{
+	
+}
+
+#currentDate{
+	background-color: #A82E09;
+	width: 90%;
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.1rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
