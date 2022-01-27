@@ -157,6 +157,10 @@ p{
 	font-family: 'Cormorant', serif;
 }
 
+a:visited{
+	color: snow;
+}
+
 footer{
 	padding: 50px;
 	text-align: center;

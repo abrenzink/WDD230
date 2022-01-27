@@ -10,7 +10,7 @@ header{
 	color: snow
 }
 
-.logo img{
+#logo img{
 	background-color: snow;
 	border-radius: 150px;
 	margin: 20px;
