@@ -10,32 +10,71 @@ header{
 	color: snow
 }
 
-#logo img{
+.header{
+	flex: grid;
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+}
+
+.logo img{
 	background-color: snow;
 	border-radius: 150px;
 	margin: 20px;
-	max-width: 8%;
-	float: left;
+	width: 15%;
+	height: 15%;
 }
 
-nav ul{
+.title{
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-
+	flex-direction: column;
+	margin: 5% 2%;
 }
 
-nav li{
-	
+.socialMedia img{
+	width: 50px;
 }
 
-#currentDate{
-	background-color: #A82E09;
-	width: 90%;
-	margin: 20px auto;
-	padding: 10px;
+.navigation li{
+	display: block;
 	text-align: center;
-	font-size: 1.1rem;
+}
+
+nav ul li.active a{
+	background-color: rgba(0,0,0,0.2);;
+}
+
+nav ul li a:hover {
+	background-color:  rgba(0,0,0,0.3);
+}
+
+nav ul li a{
+	display: block;
+	font-size: 2rem;
+	color: snow;
+	padding: .8rem 2vw;
+	text-decoration: none;
+	border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav button{
+	margin: .2rem 2vw;
+	background-color: transparent;
+	border: none;
+	font-size: 2.5rem;
+	color: #2b0b02;
+}
+
+#date{
+	background-color: rgba(0,0,0,0.2);
+	color:snow;
+	font-size: 2rem;
+	width: 90%;
+	margin: 30px auto;
+	padding: 30px;
+	text-align: center;
 	border-style: solid;
 	border-width: 1px;
 	border-color: white;
