@@ -2,6 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Cormorant', serif;
+}
+
+
+h1, h2{
+	font-family: 'PT Sans', sans-serif;
 }
 
 header, footer{
