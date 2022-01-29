@@ -1,18 +1,56 @@
 @media only screen and (min-width: 45.5rem){
     
+    nav{
+        padding: 10px 0;
+    }
+
     nav button{
         display: none;
+    }
+
+    nav ul{
+        list-style-type: none;
+    }
+
+    #navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba(0,0,0,0.2);
     }
 
     nav ul li a{
         border: none;
     }
 
-    #navigation{
+    .spotParent{
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-left: 2vw;
+        gap: 15px;
+    }
+
+    footer{
+        padding: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footerLogo{
+        justify-self: end;
+    }
+
+    .footerTitle{
+        text-align: left;
+        grid-column: 2/3;
+    }
+
+    .map{
+        grid-column: 3/5;
+    }
+
+    footer p{
+        grid-column: 1/5;
     }
 
 

@@ -29,9 +29,12 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 
 const fulldate = `${dayName}, ${d.getDay()} ${monthName} ${year}`;
+const lastUpdate = document.lastModified;
 
 
 document.getElementById("date").textContent = fulldate;
+document.getElementById("currentYear").textContent = year;
+document.getElementById("lastUpdate").textContent = lastUpdate;
 
 
 function toggleMenu(){
@@ -44,5 +47,5 @@ function toggleMenu(){
 	document.getElementById("navigation").classList.toggle("open");
 }
 
-const x = document.getElementById('hamBtn');
+const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;

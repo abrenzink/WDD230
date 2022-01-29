@@ -4,20 +4,21 @@
 	box-sizing: border-box;
 }
 
-header{
+header, footer{
 	background-color: #762107;
 	width: 100%;
 	color: snow;
-	padding-bottom: 10px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.logo{
-	background-color: snow;
-	margin: 20px;
-	width: 70%;
+header{
+	padding: 30px 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+}
+
+header .logo{
+	width: 60%;
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 	justify-self: center;
@@ -26,21 +27,20 @@ header{
 .title{
 	display: flex;
 	flex-direction: column;
-	margin: 5% 2%;
 	grid-column: 2 / 4;
 	grid-row: 1 / 2;
-	justify-self: start;
-	align-self: center;
 }
 
 .socialMedia{
-	padding: 30px 15px;
-	grid-column: 4 / 5;
+	padding-right: 30px;
+	grid-column: 4 / 6;
 	grid-row: 1 / 2;
+	justify-self: end;
+	display: flex;
 }
 
 .socialMedia img{
-	width: 50px;
+	width: 60px;
 }
 
 nav{
@@ -48,9 +48,13 @@ nav{
 	grid-row: 2 / 3;
 }
 
-#navigation li{
+.open{
 	display: block;
 	text-align: center;
+}
+
+nav ul{
+	display: none;
 }
 
 nav ul li.active a{
@@ -71,25 +75,52 @@ nav ul li a{
 }
 
 nav button{
-	margin: .2rem 2vw;
+	margin-left: 90%;
 	background-color: transparent;
 	border: none;
 	font-size: 2.5rem;
-	color: #2b0b02;
-
+	color: rgba(0,0,0,0.5);
+	text-align: right;
 }
 
 #date{
-	background-color: rgba(0,0,0,0.2);
-	color:snow;
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid rgba(0,0,0,.2);
 	font-size: 1.2rem;
-	width: 90%;
-	margin: 30px auto;
-	padding: 10px;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgba(0,0,0,0.4);
+	margin: 20px 0;
+	padding: 10px 0;
+	text-align: center;	
 	grid-column: 1 / 6;
-	grid-row: 3 / 4;
 }
+
+
+.section, .spotlight{
+	width: 90%;
+	margin: 10px auto;
+	padding: 15px;
+	border: 1px solid rgba(0,0,0,0.5);
+	font-size: 2rem;
+}
+
+main{
+	padding: 2vw 0;
+}
+
+footer{
+	text-align: center;
+	padding: 3vw;
+}
+
+footer p{
+	border-top: 1px solid rgba(0,0,0,0.2);
+	padding: 15px;
+}
+
+.map{
+	padding: 15px;
+}
+
+.footerLogo{
+	width: 10vw;
+}
+
