@@ -37,7 +37,7 @@ console.log(divList);
 
 const popUp = divList[17];
 
-if(weekDay == "Tuesday" || weekDay == "Thursday" ){
+if(weekDay == "Tuesday" || weekDay == "Monday" ){
 	showPopup();
 } else {
 	hidePopup();
