@@ -26,13 +26,22 @@ const months = [
 const d = new Date();
 const weekDay = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
+const monthDay = d.getDate();
 const year = d.getFullYear();
 
-console.log(weekDay);
-
 const lastUpdate = document.lastModified;
-const fulldate = `${weekDay}, ${d.getDay()} ${monthName} ${year}`;
+const fulldate = `${weekDay}, ${monthName} ${monthDay}, ${year}`;
 
+const divList = document.querySelectorAll("div");
+console.log(divList);
+
+const popUp = divList[17];
+
+if(weekDay == "Tuesday" || weekDay == "Thursday" ){
+	showPopup();
+} else {
+	hidePopup();
+}
 
 document.getElementById("currentDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
@@ -41,10 +50,13 @@ document.getElementById("lastUpdate").textContent = lastUpdate;
 const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;
 
-if(weekDay == "Tuesday" || weekDay == "Thursday" ){
-	showPopup();
-} else {
-	hidePopup();
+
+function hidePopup(){
+	popUp.setAttribute('class', 'hidden');
+}
+
+function showPopup(){
+	popUp.setAttribute('class', 'shown');
 }
 
 function toggleMenu(){
@@ -55,17 +67,4 @@ function toggleMenu(){
 
 	//console.log("WORKED!!");
 	document.getElementById("navigation").classList.toggle("open");
-}
-
-const divList = document.querySelectorAll("div");
-console.log(divList);
-
-const popUp = divList[13];
-
-function hidePopup(){
-	popUp.setAttribute('class', 'hidden');
-}
-
-function showPopup(){
-	popUp.setAttribute('class', 'shown');
 }

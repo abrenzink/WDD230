@@ -131,10 +131,14 @@ footer p{
 }
 
 .shown{
-	background-color: rgb(147, 20, 220);
+	background-color: darkblue;
+	display: absolute;
+	width: 300px;
+	height: 150px;
+
 }
 
 .hidden{
-	background-color: crimson;
+	display: none;
 }
 
