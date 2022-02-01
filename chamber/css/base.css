@@ -89,7 +89,7 @@ nav button{
 	text-align: right;
 }
 
-#date{
+#currentDate{
 	background-color: rgba(0,0,0,.05);
 	border: 1px solid rgba(0,0,0,.2);
 	font-size: 1.2rem;
@@ -128,5 +128,13 @@ footer p{
 
 .footerLogo{
 	width: 10vw;
+}
+
+.shown{
+	background-color: rgb(147, 20, 220);
+}
+
+.hidden{
+	background-color: crimson;
 }
 

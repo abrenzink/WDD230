@@ -24,18 +24,28 @@ const months = [
 ];
 
 const d = new Date();
-const dayName = daynames[d.getDay()];
+const weekDay = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 
-const fulldate = `${dayName}, ${d.getDay()} ${monthName} ${year}`;
+console.log(weekDay);
+
 const lastUpdate = document.lastModified;
+const fulldate = `${weekDay}, ${d.getDay()} ${monthName} ${year}`;
 
 
-document.getElementById("date").textContent = fulldate;
+document.getElementById("currentDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
 document.getElementById("lastUpdate").textContent = lastUpdate;
 
+const x = document.getElementById("hamBtn");
+x.onclick = toggleMenu;
+
+if(weekDay == "Tuesday" || weekDay == "Thursday" ){
+	showPopup();
+} else {
+	hidePopup();
+}
 
 function toggleMenu(){
 	//here classList specifies what property of the chosen element
@@ -47,5 +57,15 @@ function toggleMenu(){
 	document.getElementById("navigation").classList.toggle("open");
 }
 
-const x = document.getElementById("hamBtn");
-x.onclick = toggleMenu;
+const divList = document.querySelectorAll("div");
+console.log(divList);
+
+const popUp = divList[13];
+
+function hidePopup(){
+	popUp.setAttribute('class', 'hidden');
+}
+
+function showPopup(){
+	popUp.setAttribute('class', 'shown');
+}
