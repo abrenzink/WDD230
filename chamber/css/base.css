@@ -42,7 +42,7 @@ header{
 	padding: 20px 0;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-
+	align-items: center;
 }
 
 header .logo{
@@ -53,6 +53,7 @@ header .logo{
 }
 
 .title{
+	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
 	grid-column: 2 / 6;
@@ -63,11 +64,12 @@ header .logo{
 	grid-column: 5 / 6;
 	grid-row: 2 / 3;
 	display: flex;
+	align-items: center;
 }
 
 .socialMedia img{
 	width: 50px;
-	margin: 0 auto;
+	height: 50px;
 }
 
 nav{
@@ -112,7 +114,6 @@ nav button{
 	background-color: rgba(0,0,0,.05);
 	border: 1px solid rgba(0,0,0,.2);
 	font-size: 1.5rem;
-	margin: 20px 0;
 	padding: 10px 0;
 	text-align: center;	
 	grid-column: 1 / 6;
