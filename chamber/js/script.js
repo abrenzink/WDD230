@@ -33,7 +33,6 @@ const lastUpdate = document.lastModified;
 const fulldate = `${weekDay}, ${monthName} ${monthDay}, ${year}`;
 
 const divList = document.querySelectorAll("div");
-console.log(divList);
 
 const popUp = divList[0];
 const closeButton = document.querySelector('button');

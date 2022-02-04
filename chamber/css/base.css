@@ -5,7 +5,7 @@
 	font-family: 'Cormorant', serif;
 }
 
-h1, h2, button{
+h1, h3, button{
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
 	background: transparent;
@@ -39,14 +39,14 @@ header, footer{
 }
 
 header{
-	padding: 30px 0;
+	padding: 20px 0;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	align-items: center;
+
 }
 
 header .logo{
-	width: 60%;
+	width: 50px;
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 	justify-self: center;
@@ -55,20 +55,19 @@ header .logo{
 .title{
 	display: flex;
 	flex-direction: column;
-	grid-column: 2 / 4;
+	grid-column: 2 / 6;
 	grid-row: 1 / 2;
 }
 
 .socialMedia{
-	padding-right: 30px;
-	grid-column: 4 / 6;
-	grid-row: 1 / 2;
-	justify-self: end;
+	grid-column: 5 / 6;
+	grid-row: 2 / 3;
 	display: flex;
 }
 
 .socialMedia img{
-	width: 60px;
+	width: 50px;
+	margin: 0 auto;
 }
 
 nav{
@@ -103,10 +102,10 @@ nav ul li a{
 }
 
 nav button{
-	margin-left: 90%;
 	font-size: 2.5rem;
 	color: rgba(0,0,0,0.5);
 	text-align: right;
+	margin: 10px;
 }
 
 #currentDate{

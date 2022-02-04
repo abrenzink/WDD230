@@ -23,6 +23,16 @@
         border: none;
     }
 
+    header .logo{
+        margin: 0 15px;
+        justify-self: right;
+    }
+
+    .socialMedia{
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+
     .spotParent{
         display: flex;
         gap: 15px;
