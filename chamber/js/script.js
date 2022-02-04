@@ -37,7 +37,7 @@ const divList = document.querySelectorAll("div");
 const popUp = divList[0];
 const closeButton = document.querySelector('button');
 
-if(weekDay == "Tuesday" || weekDay == "Monday" ){
+if(weekDay == "Tuesday" || weekDay == "Friday" ){ //friday is used just for test
 	showElement();
 } else {
 	hideElement();

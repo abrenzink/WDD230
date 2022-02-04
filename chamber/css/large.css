@@ -1,4 +1,10 @@
 @media only screen and (min-width: 64rem){
+    
+    .shown, #popup{
+        font-size: 1.5rem;
+        padding: 40px;
+    }
+    
     header{
         padding: 3vw 5vw;
         display: block;
