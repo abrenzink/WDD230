@@ -9,7 +9,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cormorant:wght@300&family=PT+Sans+Caption&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
     <link rel="stylesheet" href="css/normalize.css">
         
     <link rel="stylesheet" href="css/base.css">
@@ -25,7 +26,7 @@
         <button>❌</button>
     </div> 
     <header>
-        <img class="logo" src="assets/blackriverlogo.png" alt="Black River Chamber of Commerce Logo"/> 
+        <img class="logo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo"/> 
         <div class="title">      
             <h1>Black River</h1>
             <h2>Chamber of Commerce</h2>
@@ -48,23 +49,52 @@
     </header>
    
     <main>
-        <div class="section hero">
-            <h2>Welcome to the Black River Chamber</h2>
-            <button onclick="">JOIN US</button>
+        <div class="item hero">
+            <picture>
+                <img class="heroBackground" src="assets/water-meeting.jpg" alt="Black River top view"
+                srcset="">
+            </picture>
+            <section>
+                <h1>Welcome to the Black River Chamber</h1>
+                <button onclick="">JOIN US</button>
+            </section>
         </div>
-        <div class="section weather">Weather</div>
-        <div class="section release">New Release</div>
-        <div class="section event">Event</div>
-        <div class="section join">Join</div>
-        <div class="section spotParent">
-            <div class="spotlight">Spotlight 1</div>
-            <div class="spotlight">Spotlight 2</div>
-            <div class="spotlight">Spotlight 3</div>
+        <div class="item weather">
+           <h3> Weather</h3>
+            <div class="weatherWidget" ></div>
+        </div>
+        <div class="item release">
+            <h3>Business Call 📢</h3>
+            <p> We want to support impact businesses and entrepreneurs that are generating 
+                and strengthening a new economy, based on the conservation of natural 
+                resources and the appreciation of the socio-biodiversity of the Amazon. </p>
+        </div>
+        <div class="item event">
+            <h3>Event</h3>
+        </div>
+        <div class="item join">
+           <h3>Join</h3>
+        </div>
+        <div class="item spotParent">
+            <div class="spotlight">
+                <h4>Register you business</h4>
+                <p>In this section there are business opportunities of Amazonic companies interested in expanding the market.
+                    You can also register and promote your business opportunity to the Amazonic market.
+                    The information will be kept disclosed for up to 35 days after its display.
+                </p>
+                <button id="registerBusiness">Register your business opportunity here</button>
+            </div>
+            <div class="spotlight">
+                <h4>Spotlight 2</h4>
+            </div>
+            <div class="spotlight">
+                <h4>Spotlight 3</h4>
+            </div>
         </div>
     </main>
     
     <footer>
-        <img class="footerLogo" src="assets/blackriverlogo.png" alt="Black River Chamber of Commerce Logo" /> 
+        <img class="footerLogo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo" /> 
         <div class="footerTitle">      
             <h3>Black River</h3>
             <h4>Chamber of Commerce</h4>
@@ -78,5 +108,6 @@
         <p>&copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | WDD230 Project | Last Update: <span id="lastUpdate"></span></p>
     </footer>
     <script src="js/script.js"></script>
+
 </body>
 </html>

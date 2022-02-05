@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Cormorant', serif;
+	font-family: 'Andada Pro', serif;
 }
 
 h1, h3, button{
@@ -36,6 +36,8 @@ h1, h3, button{
 #popup button{
 	padding: 5px;
 }
+
+/*------------------------------------HEADER------------------------------------*/
 
 header, footer{
 	background-color: #762107;
@@ -118,31 +120,85 @@ nav button{
 #currentDate{
 	background-color: rgba(0,0,0,.05);
 	border: 1px solid rgba(0,0,0,.2);
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	padding: 10px 0;
 	text-align: center;	
 	grid-column: 1 / 6;
 }
-.section, .spotlight{
+
+/*--------------------------------------MAIN--------------------------------------*/
+
+.item{
 	background: #c9a297;
 	width: 90%;
 	margin: 10px auto;
-	padding: 2.5vw;
-	border: 1px solid rgba(0,0,0,0.5);
-	font-size: 2rem;
-	min-height: 12rem;
+	padding: 1.5vw;	
+}
+
+.spotlight{
+	padding: 10px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.item h3, .spotlight h4{
 	font-family: 'PT Sans', sans-serif;
-	text-shadow: 2px 2px 6px snow;
+	border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.item p{
+	margin: 10px 0;
+	font-size: 1rem;
+}
+
+.item picture{
+	width: 100%;
 }
 
 .hero{
-	background-image: url("../assets/water-meeting.jpg");
-	background-position: center;
+	padding: 0;
+	position: relative;
+}
+
+.hero section{
+	position: absolute;
+	top: 3vw;
+	left: 3vw;
+	right: 3vw;
+}
+
+.heroBackground {
+	/*background-image: url("../assets/water-meeting.jpg");
+	background-position: center;*/
+	width: 100%;
+}
+
+.hero h1{
+	text-shadow: 2px 2px 8px snow;
 }
 
 .hero button{
-	background-color:  #ACCE22;
-	padding: 10px 25px;
+	background-color: #ACCE22;
+	font-size: 1rem	;
+	padding: 10px 15px;
+	border: 2px solid black;
+	border-radius: 50px;
+	max-width: 250px;
+	margin: 1vw auto;
+}
+
+.release p{
+	background-color: snow;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.2rem;
+	margin-top: 20px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.spotlight button{
+	background-color: #762107;
+	color: snow;
+	padding: 10px 15px;
 	border-radius: 50px;
 	max-width: 250px;
 	margin: 20px auto;
@@ -151,6 +207,8 @@ nav button{
 main{
 	padding: 2vw 0;
 }
+
+/*----------------------------------FOOTER------------------------------------*/
 
 footer{
 	text-align: center;
@@ -169,5 +227,8 @@ footer p{
 .footerLogo{
 	width: 10vw;
 }
+
+
+	
 
 
