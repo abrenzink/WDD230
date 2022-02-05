@@ -52,7 +52,6 @@
         padding: 2vw 4vw;
         display: grid;
         grid-template-columns: 1fr 50% 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .event{
