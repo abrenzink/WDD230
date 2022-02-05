@@ -72,6 +72,8 @@ header .logo{
 	grid-row: 2 / 3;
 	display: flex;
 	align-items: center;
+	align-self: start;
+	margin-top: 10px;
 }
 
 .socialMedia img{
@@ -135,7 +137,7 @@ nav button{
 	padding: 10px;	
 }
 
-.item h3, .spotlight h4{
+.item h3{
 	font-family: 'PT Sans', sans-serif;
 	border-bottom: 1px solid rgba(0,0,0,.5);
 }
@@ -183,8 +185,9 @@ nav button{
 	margin: 1vw auto;
 }
 
-.weather h3{
-	margin-bottom: 15px;
+.weather > div{
+	margin-top: 15px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
 }
 
 .release p, .join p{
@@ -197,7 +200,7 @@ nav button{
 
 .join img{
 	display: block;
-	width: 100px;
+	width: 80px;
 	margin: 0 auto;
 }
 
@@ -214,7 +217,7 @@ nav button{
 	padding: 10px 15px;
 	border-radius: 50px;
 	max-width: 250px;
-	margin: 20px auto;
+	margin: 10px auto;
 }
 
 main{
