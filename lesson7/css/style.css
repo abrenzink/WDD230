@@ -1,0 +1,25 @@
+div{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+img{
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+h1{
+	max-width: 300px;
+	margin: 40px auto;
+	
+}
+
+img[data-src] {
+	filter: blur(0.2em);
+  }
+  
+ img {
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
