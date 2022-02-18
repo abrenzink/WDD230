@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber website for WDD230, Brigham Young University Idaho">
+    
+    <title>Black River Chamber of Commerce Oficial Site</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cormorant:wght@300&family=PT+Sans+Caption&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/normalize.css">
+        
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="assets/favicon.png">
+</head>
+
+<body>
+    <div id="popup">
+        🤝🏼 <a href="#">Come join us</a> for the chamber meet and greet Wednesday at 7:00 p.m."
+        <button>❌</button>
+    </div> 
+    <header>
+        <img class="logo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo"/> 
+        <div class="title">      
+            <h1>Black River</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <nav>
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
+                <li class="active"><a href="index.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socialMedia">
+            <a href="#"><img src="assets/instagram.png" alt="instagram icon"></a> 
+            <a href="#"><img src="assets/youtube.png" alt="youtube icon"></a> 
+        </div>
+        <div id="currentDate"></div>
+         
+    </header>
+   
+    <main>
+        <div class="item hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="assets/water-meeting-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/water-meeting-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/water-meeting-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/water-meeting-original.jpg">
+                <img class="heroBackground" src="assets/water-meeting-original.jpg" alt="Black River top view">
+            </picture>
+            <section>
+                <h1>Welcome to the Black River Chamber</h1>
+                <button onclick="">JOIN US</button>
+            </section>
+        </div>
+        <div class="item weather">
+            <h3>Weather</h3>
+            <div id="ww_91ce5843d013e" v='1.20' loc='id' a='{"t":"responsive","lang":"en","ids":["wl3182"],"cl_bkg":"#689F38","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#FFFFFF","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"3","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","cl_odd":"#0000000a"}'>Weather for the Following Location: <a href="https://2ua.org/bra/manaus/map/" id="ww_91ce5843d013e_u" target="_blank">Manaus, Brazil</a></div><script async src="https://srv2.weatherwidget.org/js/?id=ww_91ce5843d013e"></script>
+        </div>
+        <div class="item release">
+            <h3>Business Call 📢</h3>
+            <p> We want to support impact businesses and entrepreneurs that are generating 
+                and strengthening a new economy, based on the conservation of natural 
+                resources and the appreciation of the socio-biodiversity of the Amazon. </p>
+        </div>
+        <div class="item event">
+            <h3>Next Event</h3> 
+            <p>Wednesday, 19h</p>
+        </div>
+        <div class="item join">
+            <h3>Save the Amazon</h3>
+            <img src="assets/leaf-shape.svg" alt="green leaf"> 
+            <p>Join us to protect the world's largest rainforest</p>
+        </div>
+        <div class="item spotParent">
+            <div class="spotlight">
+                <h3>Register you business</h3>
+                <p>In this section there are business opportunities of Amazonic companies
+                     interested in expanding the market.
+                    You can also register and promote your business opportunity to the Amazonic market.
+                    The information will be kept disclosed for up to 35 days after its display.
+                </p>
+                <button id="registerBusiness">Register your business opportunity here</button>
+            </div>
+            <div class="spotlight">
+                <h3>Beautiful stories</h3>
+                <p>IDiscover the story of warriors who made the best of opportunities in 
+                    our region, generating sustainable and profitable businesses.
+                </p>
+                <button id="registerBusiness">Show me</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <img class="footerLogo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo" /> 
+        <div class="footerTitle">      
+            <h3>Black River</h3>
+            <h4>Chamber of Commerce</h4>
+            <h4>Rua Franz Schubert, 330 - Flores, Manaus | Brazil</h4>
+        </div>
+        <div class="map">
+            <div>email@blackriverchamber.com</div>
+            <div>+55 98 99999-9899</div>
+            <div>🌎 Location Map</div>
+        </div>
+        <p>&copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | WDD230 Project | Last Update: <span id="lastUpdate"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
