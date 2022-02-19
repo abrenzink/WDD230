@@ -48,7 +48,7 @@
         margin: 50px 0 0 0;
     }
 
-    main{
+    .main{
         padding: 2vw 4vw;
         display: grid;
         grid-template-columns: 1fr 50% 1fr;
@@ -84,6 +84,13 @@
     .join{
         grid-column: 1/2;
         grid-row: 3/4;
+    } 
+
+    .discover-page{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
     }
-    
 }

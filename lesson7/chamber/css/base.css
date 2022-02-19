@@ -221,8 +221,14 @@ nav button{
 }
 
 main{
-	padding: 2vw 0;
+	padding: 2vw 2VW;
 }
+
+main h1{
+	text-align: center;
+	margin: 30px 20px 50px 20px;
+}
+
 
 /*----------------------------------FOOTER------------------------------------*/
 
@@ -244,7 +250,23 @@ footer p{
 	width: 10vw;
 }
 
+/*----------------------------------DISCOVER PAGE------------------------------------*/
 
-	
+.discover-page{
+	display: flex;
+	flex-direction: column;
+}
+
+.discover{
+	max-width: 90%;
+	margin: 25px auto 10px auto;
+}
+
+.discover img{
+	border-radius: 0 400px;
+}
+
+
+		
 
 
