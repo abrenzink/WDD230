@@ -61,6 +61,8 @@ const monthName = months[d.getMonth()];
 const monthDay = d.getDate();
 const year = d.getFullYear();
 
+
+
 const lastUpdate = document.lastModified;
 const fulldate = `${weekDay}, ${monthName} ${monthDay}, ${year}`;
 
@@ -101,3 +103,21 @@ function toggleMenu(){
 	document.getElementById("navigation").classList.toggle("open");
 }
 
+/*----------------------------------DAYS------------------------------------*/
+
+const numDays = document.querySelector(".numDays");
+
+let lastVisit = Number(window.localStorage.getItem("lastVisit"))
+
+if (lastVisit !== 0) {
+	numDays.textContent = `This is your first visit!`
+	console.log(numDays)
+} else {
+	let thisVisit = d.now();
+	let timeDiff = Math.abs(thisVisit.getTime() - lastVisit.getTime());
+	let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+	console.log(diffDays)
+	numDays.textContent = `${diffDays}`
+}
+
+localStorage.setItem("lastVisit", JSON.stringify(d.now()));
