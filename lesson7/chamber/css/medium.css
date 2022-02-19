@@ -67,4 +67,8 @@
     footer p{
         grid-column: 1/5;
     }
+
+    .discover img:hover{
+        border-radius: 10px;
+    }
 }
