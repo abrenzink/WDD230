@@ -12,6 +12,15 @@ h1, h3, button{
 	border: none;
 }
 
+img[data-src] {
+	filter: blur(0.7em);
+}
+
+img{
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
+
 .shown, #popup{
 	background-color: #ACCE22;
 	color: rgba(0,0,0,.9);
@@ -264,8 +273,14 @@ footer p{
 
 .discover img{
 	border-radius: 0 400px;
+	max-width: 100%;
 }
 
+
+figcaption{
+	text-align: right;
+	margin: 15px 0;
+}
 
 		
 

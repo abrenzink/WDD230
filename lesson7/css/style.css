@@ -4,11 +4,6 @@ div{
 	gap: 15px;
 }
 
-img{
-	max-width: 300px;
-	margin: 0 auto;
-}
-
 h1{
 	max-width: 300px;
 	margin: 40px auto;
@@ -17,9 +12,11 @@ h1{
 
 img[data-src] {
 	filter: blur(0.2em);
-  }
-  
- img {
+}
+
+img{
+	max-width: 300px;
+	margin: 0 auto;
 	filter: blur(0em);
 	transition: filter 0.5s;
 }
