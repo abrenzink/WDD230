@@ -81,7 +81,7 @@ document.getElementById("currentDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
 document.getElementById("lastUpdate").textContent = lastUpdate;
 
-const x = document.getElementById("hamBtn");
+const x = document.getElementsByClassName("hamBtn");
 x.onclick = toggleMenu;
 closeButton.onclick = hideElement;
 
@@ -100,7 +100,7 @@ function toggleMenu(){
 	//toggling the "responsive" name into the classList property.
 	
 	//console.log("WORKED!!");
-	document.getElementById("navigation").classList.toggle("open");
+	document.getElementsByClassName("navigation").classList.toggle("open");
 }
 
 /*----------------------------------DAYS------------------------------------*/
