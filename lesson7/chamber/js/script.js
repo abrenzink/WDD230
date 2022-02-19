@@ -61,10 +61,11 @@ const monthName = months[d.getMonth()];
 const monthDay = d.getDate();
 const year = d.getFullYear();
 
-
-
 const lastUpdate = document.lastModified;
 const fulldate = `${weekDay}, ${monthName} ${monthDay}, ${year}`;
+
+
+/* ----------------------------------------------------------------------------------- */
 
 const divList = document.querySelectorAll("div");
 
