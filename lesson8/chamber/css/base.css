@@ -294,3 +294,8 @@ figcaption{
 label, input, textarea, .level p{
 	margin: 10px 20px;
 }
+
+.send{
+	padding: 10px 30px;
+	margin: 10px 0;
+}
