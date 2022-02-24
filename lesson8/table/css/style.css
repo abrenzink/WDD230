@@ -40,3 +40,7 @@ tr:nth-child(even){
 tr:nth-child(4) td:nth-child(3){    
     background-color: rgb(255, 71, 157);
 }
+
+tfoot{
+    font-size: small;
+}
