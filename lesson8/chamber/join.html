@@ -48,6 +48,7 @@
     <main>
        
         <form class="joinForm" action="thankyou.html" method="get">
+            <h2 class="formTitle">FORM</h2>
             <label for="fname" required>First name:
                 <input type="text" id="fname" name="fname">
             </label><br>
@@ -66,27 +67,17 @@
             <label for="businessName" required>Business name:
                 <input type="text" id="businessName" name="businessName">
             </label><br>
-            <div class="level">
-                <p>Select a membership level:</p>
-                <div>
-                    <label for="level1">
-                        <input type="radio" id="level1" name="membLevel" value="level1"
-                        checked>Level 1
-                    </label>
-                </div>
-
-                <div>
-                    <label for="level2">
-                        <input type="radio" id="level2" name="membLevel" value="level2">Level 2
-                    </label>
-                </div>
-                
-                <div>
-                    <label for="level3">
-                        <input type="radio" id="level3" name="membLevel" value="level3">Level 3
-                    </label>
-                </div>
-            </div>
+            <p>Select a membership level:</p>
+            <label for="level1">
+                <input class="radio" type="radio" id="level1" name="membLevel" value="level1"
+                checked>Level 1
+            </label>
+            <label for="level2">
+                <input class="radio" type="radio" id="level2" name="membLevel" value="level2">Level 2
+            </label>
+            <label for="level3">
+                <input class="radio" type="radio" id="level3" name="membLevel" value="level3">Level 3
+            </label>
             <label for="description">Business description:
                 <textarea id="description" name="description" rows="6"></textarea>
             </label><br>
@@ -95,7 +86,7 @@
                 <input class="send"
                     name="button"
                     type="button"
-                    value="Send info">
+                    value="Join the Chamber">
             </label>
         </form>
         

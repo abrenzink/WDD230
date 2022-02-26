@@ -286,16 +286,41 @@ figcaption{
 /*--------------------------------------JOIN PAGE--------------------------------------*/
 
 .joinForm{
-	max-width: 20%;
 	margin: 0 auto;
 	background-color: #f5b9a6;
 }
 
-label, input, textarea, .level p{
-	margin: 10px 20px;
+.formTitle{
+	text-align: center;
+	padding: 15px;
+}
+
+label, form p{
+	margin: 5px 10px;
+}
+
+form input{
+	margin: 10px auto;
+	height: 44px;
+	width: 80%;
+	display: block;
+}
+
+form textarea{
+	margin: 10px auto;
+	display: block;
+}
+
+.radio{
+	background-color: #ACCE22;
+	max-width: 20px;
+	max-height: 20px;
+	margin: 5px;
+	display: inline-block;
 }
 
 .send{
 	padding: 10px 30px;
-	margin: 10px 0;
+	margin: 10px auto;
+	border-radius: 5px;
 }
