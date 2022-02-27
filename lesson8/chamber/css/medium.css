@@ -16,7 +16,7 @@
         list-style-type: none;
     }
 
-    .navigation{
+    #navigation{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -70,5 +70,9 @@
 
     .discover img:hover{
         border-radius: 10px;
+    }
+
+    form{
+        max-width: 70%
     }
 }

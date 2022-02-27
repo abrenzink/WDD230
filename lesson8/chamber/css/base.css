@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 nav ul li a{
 	display: block;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	color: snow;
 	padding: .8rem 2vw;
 	text-decoration: none;
@@ -164,7 +164,9 @@ nav button{
 	height: 100%;
 }
 
-.hero h1{
+.hero h2{
+	text-align: center;
+	padding: 15px 2px;
 	text-shadow: 2px 2px 8px snow;
 }
 
@@ -285,42 +287,97 @@ figcaption{
 
 /*--------------------------------------JOIN PAGE--------------------------------------*/
 
-.joinForm{
-	margin: 0 auto;
-	background-color: #f5b9a6;
+form{
+	margin: 2rem auto;
+	background-color: #ffded4;
 }
 
-.formTitle{
+form h2{
 	text-align: center;
 	padding: 15px;
 }
 
-label, form p{
-	margin: 5px 10px;
+form fieldset{
+	margin: 1.5rem auto;
+	padding: .8rem;
+	border-radius: 10px;
+	max-width: 80%;
 }
 
-form input{
-	margin: 10px auto;
-	height: 44px;
-	width: 80%;
+form legend{
+	padding: .2rem .8rem;
+	border: 1.5px solid rgba(0,0,0,0.5);
+}
+
+
+form label.top, form div{
 	display: block;
+	padding-top: .5rem;
+	margin: 10px auto;
+	max-width: 90%;
 }
 
-form textarea{
-	margin: 10px auto;
+form label.top input, form label.top textarea{
 	display: block;
-}
-
-.radio{
-	background-color: #ACCE22;
-	max-width: 20px;
-	max-height: 20px;
-	margin: 5px;
-	display: inline-block;
-}
-
-.send{
-	padding: 10px 30px;
-	margin: 10px auto;
+	padding: .75rem;
+	width: 95%;
 	border-radius: 5px;
+}
+
+form label.sbs{
+	display: block;
+}
+
+form label.sbs input{
+	margin: 5px;
+	padding: .75rem;
+	font-weight: 700px;
+}
+
+form label.sbs span{
+	background-color: #762107;
+	color: snow;
+	padding: 5px 15px;
+	border-radius: 15px;
+	margin-left: 30px;
+}
+
+form input.send{
+	margin: 1.5rem 0 1.5rem 2.5rem;
+	padding: .8rem;
+	border-radius: 50px;
+	background-color: #ACCE22;
+}
+
+form label.top input:required{
+	border-left: red solid	 6px;
+}
+
+form label.top input:required:valid{
+	border-left: green solid 6px;
+}
+
+/*--------------------------------------THANK YOU PAGE--------------------------------------*/
+
+.thanks{
+	max-width: 90%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.thanks p{
+	margin-bottom: 50px;
+}
+
+.home{
+	background-color: #ACCE22;
+	border-radius: 50px;
+	padding: 15px 50px;
+	margin-bottom: 25px;
+	font-size: 1.5rem;
+}
+
+.thanksTitle{
+	font-size: 2.5rem;
+	margin: 20px 0;
 }

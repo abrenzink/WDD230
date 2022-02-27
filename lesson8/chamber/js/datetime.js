@@ -32,39 +32,31 @@ const year = d.getFullYear();
 const lastUpdate = document.lastModified;
 const fulldate = `${weekDay}, ${monthName} ${monthDay}, ${year}`;
 
-const divList = document.querySelectorAll("div");
-
-const popUp = divList[0];
-const closeButton = document.querySelector('button');
-
-if(weekDay == "Tuesday" || weekDay == "Wednesday"){
-	showElement();
-} else {
-	hideElement();
-}
-
 document.getElementById("currentDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
 document.getElementById("lastUpdate").textContent = lastUpdate;
 
-const x = document.getElementById("hamBtn");
-x.onclick = toggleMenu;
-closeButton.onclick = hideElement;
+const popup = document.querySelector('#popup');
+
+const closeButton = document.querySelector('#closePopup');
+
+
+if(closeButton !== null && popup !== null){
+	closeButton.onclick = hideElement;
+
+	if(weekDay == 'Tuesday' || weekDay == 'Wednesday'){
+		showElement();
+	} else {
+		hideElement();
+	}
+}
 
 
 function hideElement(){
-	popUp.setAttribute('class', 'hidden');
+	popup.setAttribute('class', 'hidden');
 }
 
 function showElement(){
-	popUp.setAttribute('class', 'shown');
+	popup.setAttribute('class', 'shown');
 }
 
-function toggleMenu(){
-	//here classList specifies what property of the chosen element
-	//we want to affect. toggle is a key word that makes the job of
-	//toggling the "responsive" name into the classList property.
-	
-	//console.log("WORKED!!");
-	document.getElementById("navigation").classList.toggle("open");
-}

@@ -21,10 +21,6 @@
 </head>
 
 <body>
-    <div id="popup">
-        🤝🏼 <a href="#">Come join us</a> for the chamber meet and greet Wednesday at 7:00 p.m."
-        <button>❌</button>
-    </div> 
     <header>
         <img class="logo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo"/> 
         <div class="title">      
@@ -32,8 +28,8 @@
             <h2>Chamber of Commerce</h2>
         </div>
         <nav>
-            <button class="hamBtn">&#9776;</button>
-            <ul class="navigation">
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
@@ -63,7 +59,7 @@
                     alt="Black River top view">
             </picture>
             <section>
-                <h1>Welcome to the Black River Chamber</h1>
+                <h2>Welcome to the Black River Chamber</h2>
                 <button onclick="">JOIN US</button>
             </section>
         </div>
@@ -106,7 +102,10 @@
         </div>
     </div>
     </main>
-    
+    <div id="popup">
+        🤝🏼 <a href="#">Come join us</a> for the chamber meet and greet Wednesday at 7:00 p.m."
+        <button id="closePopup">❌</button>
+    </div>
     <footer>
         <img class="footerLogo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo" /> 
         <div class="footerTitle">      
@@ -122,6 +121,8 @@
         <p>&copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | WDD230 Project | Last Update: <span id="lastUpdate"></span></p>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/datetime.js"></script>
+    
 </body>
 </html>

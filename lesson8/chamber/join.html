@@ -28,8 +28,8 @@
             <h2>Chamber of Commerce</h2>
         </div>
         <nav>
-            <button class="hamBtn">&#9776;</button>
-            <ul class="navigation">
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
@@ -47,47 +47,69 @@
    
     <main>
        
-        <form class="joinForm" action="thankyou.html" method="get">
-            <h2 class="formTitle">FORM</h2>
-            <label for="fname" required>First name:
-                <input type="text" id="fname" name="fname">
-            </label><br>
-            <label for="lname" required>Last name:
-                <input type="text" id="lname" name="lname">
-            </label><br>
-            <label for="businessPos">Business position:
-                <input type="text" id="businessPos" name="businessPos">
-            </label><br>
-            <label for="email">E-mail address:
-                <input type="email" id="email" name="email" placeholder="yourname@email.com">
-            </label><br>
-            <label for="phone">Celphone number:
-                <input type="tel" id="phone" name="phone" placeholder="55  92  98566-6684">
-            </label><br>
-            <label for="businessName" required>Business name:
-                <input type="text" id="businessName" name="businessName">
-            </label><br>
-            <p>Select a membership level:</p>
-            <label for="level1">
-                <input class="radio" type="radio" id="level1" name="membLevel" value="level1"
-                checked>Level 1
-            </label>
-            <label for="level2">
-                <input class="radio" type="radio" id="level2" name="membLevel" value="level2">Level 2
-            </label>
-            <label for="level3">
-                <input class="radio" type="radio" id="level3" name="membLevel" value="level3">Level 3
-            </label>
-            <label for="description">Business description:
-                <textarea id="description" name="description" rows="6"></textarea>
-            </label><br>
+        <form action="thankyou.html" method="get">
+            <h2>FORM</h2>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label class="top">
+                    First name*:
+                    <input type="text" id="fname" name="fname" required></label><br>
+                <label class="top">
+                    Last name*:
+                    <input type="text" id="lname" name="lname" required></label><br>
+                <label class="top">
+                    E-mail address:<input type="email" id="email" name="email" placeholder="yourname@email.com">
+                </label><br>
+                <label class="top">
+                    Celphone number:
+                    <input type="tel" id="phone" name="phone" placeholder="55  92  98566-6684">
+                </label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Business</legend>
+                <label class="top">
+                    Business position:
+                    <input type="text" id="businessPos" name="businessPos"></label><br>
+                
+                <label class="top">
+                    Business name*:
+                    <input type="text" id="businessName" name="businessName" required></label><br>
+                
+                <label class="top">
+                    Business description:
+                <textarea id="description" name="description" rows="6"></textarea></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Select a membership level:</div>
+                <label class="sbs"><input class="radio" type="radio" id="level1" name="membLevel" value="NP Membership"
+                    checked>Non-Profit
+                <span>Free</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+                <label class="sbs"><input class="radio" type="radio" id="level2" name="membLevel" value="Bronze Membership">Bronze
+                <span>$8.5</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+                <label class="sbs"><input class="radio" type="radio" id="level3" name="membLevel" value="Silver Membership">Silver
+                <span>$15</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+                <label class="sbs"><input class="radio" type="radio" id="level4" name="membLevel" value="Gold Membership">Gold
+                <span>$30</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+            </fieldset>
+      
+            <label class="sendBtn"><input class="send" name="button" type="button" value="Join the Chamber"></label>
+
             <input type="hidden" id="postId" name="postId" value="datetime">
-            <label for="button">
-                <input class="send"
-                    name="button"
-                    type="button"
-                    value="Join the Chamber">
-            </label>
+
+            <div class="membershipInfo">
+
+            </div>
         </form>
         
     </main>
@@ -105,7 +127,10 @@
             <div>🌎 Location Map</div>
         </div>
         <p>&copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | WDD230 Project | Last Update: <span id="lastUpdate"></span></p>
-        <script src="js/script.js"></script>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/localStorage.js"></script>
 </body>
 </html>
