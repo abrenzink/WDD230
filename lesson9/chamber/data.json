@@ -12,14 +12,14 @@
         "adress": "Rua Rio Amapa, 374 - Nossa Senhora das Gracas, Manaus - AM, 69.053-150",
         "phone": "(208) 488-4559",
         "site": "https://www.unimedmanaus.com.br/",
-        "logourl": "assets/unimed.png"
+        "logourl": "assets/unimed.jpg"
       },
       {
         "name": "BEMOL",
         "adress": "TRAVESSA MARQUES DE SANTA CRUZ, 32 - CENTRO, MANAUS/AM",
         "phone": "(208) 788-4559",
         "site": "https://www.bemol.com.br/",
-        "logourl": "assets/bemol.png"
+        "logourl": "assets/bemol.jpg"
       },
       {
         "name": "INNOVA",
@@ -47,7 +47,7 @@
         "adress": "RUA ZEBU, 201 - COLONIA OLIVEIRA MACHADO, MANAUS/AM",
         "phone": "+55 (92) 21291900",
         "site": "http://www.grupochibatao.com.br/",
-        "logourl": "assets/chibatao.png"
+        "logourl": "assets/chibatao.PNG"
       },
       {
         "name": "GREE ELECTRIC APPLIANCES DO BRASIL LTDA.",
@@ -61,14 +61,14 @@
         "adress": "AVENIDA ANDRE ARAUJO, 97 - ADRIANOPOLIS, MANAUS/AM",
         "phone": "+55 (11) 51121840",
         "site": "http://www.grupochibatao.com.br/",
-        "logourl": "assets/chibatao.png"
+        "logourl": "assets/vivara.png"
       },
       {
         "name": "BRASIL NORTE BEBIDAS S/A",
         "adress": "AVENIDA TORQUATO TAPAJOS, 5800 - COLONIA TERRA NOVA",
         "phone": "+55 (92) 21212628",
         "site": "http://www.brasilnortebebidas.com.br/",
-        "logourl": "assets/vivara.png"
+        "logourl": "assets/simoes.png"
       },
       {
         "name": "MINERACAO TABOCA S A",
