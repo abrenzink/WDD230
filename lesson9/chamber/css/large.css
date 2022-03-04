@@ -93,4 +93,9 @@
         grid-column-gap: 15px;
         grid-row-gap: 15px;
     }
+
+    div.cardStyle{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

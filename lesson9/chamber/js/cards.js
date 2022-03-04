@@ -53,6 +53,7 @@ function displayCards(business) {
 }
 
 function setListStyle(){
+    let div = document.querySelector(".cards");
     let cards = document.querySelectorAll(".bCard");
     let images = document.querySelectorAll(".logoImg");
     let titles = document.querySelectorAll("section.bCard > h3");
@@ -61,8 +62,10 @@ function setListStyle(){
     let listBtn = document.querySelector(".listBtn");
     let cardBtn = document.querySelector(".cardBtn");
   
-    listBtn.classList.add('listBtn', 'activeBtn')
+    listBtn.classList.add('listBtn', 'activeBtn');
     cardBtn.classList.remove("activeBtn");
+    div.classList.add('cards', 'listStyle');
+    div.classList.remove('cardStyle');
 
     cards.forEach((card) => {
       card.style.margin = '0 auto';
@@ -89,6 +92,7 @@ function setListStyle(){
 }
 
 function setCardsStyle(){
+  let div = document.querySelector(".cards");
   let cards = document.querySelectorAll(".bCard");
   let images = document.querySelectorAll(".logoImg");
   let titles = document.querySelectorAll("section.bCard > h3");
@@ -99,6 +103,8 @@ function setCardsStyle(){
 
   cardBtn.classList.add('cardBtn', 'activeBtn')
   listBtn.classList.remove("activeBtn");
+  div.classList.add('cards', 'cardStyle');
+  div.classList.remove('listStyle');
 
   cards.forEach((card) => {
     card.style.margin = '20px auto';

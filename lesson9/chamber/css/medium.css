@@ -75,4 +75,47 @@
     form{
         max-width: 70%
     }
+
+    /*------------------------------------DIRECTORY PAGE------------------------------------*/
+
+    div.cardStyle{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.listStyle{
+	
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bCard{
+        min-width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+        box-shadow: 0px 2px 5px #888888;
+    }
+
+    .bCard h3{font-size: .9rem;}
+
+    .bCard p{
+        padding: 2px 0; 
+        font-size: .8rem;
+        margin: 2px 0;
+    }
+
+    .bCard a{
+        word-wrap: break-word;
+        font-size: .75rem;
+    }
+
+    img.logoImg{
+        display: none;
+        width: 200px; /* width of container */
+        height: 120px; /* height of container */
+        object-fit: cover;
+        margin: 5px auto;
+    }
+
 }
