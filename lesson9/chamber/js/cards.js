@@ -53,10 +53,15 @@ function displayCards(business) {
 }
 
 function setListStyle(){
+    let cards = document.querySelectorAll(".bCard");
     let images = document.querySelectorAll(".logoImg");
     let titles = document.querySelectorAll("section.bCard > h3");
     let p = document.querySelectorAll("section.bCard > p");
     let a = document.querySelectorAll("section.bCard > a");
+
+    cards.forEach((card) => {
+      card.style.margin = '0 auto';
+    });
 
     images.forEach((img) => {
       img.style.display = 'none';
@@ -79,10 +84,15 @@ function setListStyle(){
 }
 
 function setCardsStyle(){
+  let cards = document.querySelectorAll(".bCard");
   let images = document.querySelectorAll(".logoImg");
   let titles = document.querySelectorAll("section.bCard > h3");
   let p = document.querySelectorAll("section.bCard > p");
   let a = document.querySelectorAll("section.bCard > a");
+
+  cards.forEach((card) => {
+    card.style.margin = '20px auto';
+  });
 
   images.forEach((img) => {
     img.style.display = 'block';
