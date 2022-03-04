@@ -51,3 +51,18 @@ function displayCards(business) {
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
 }
+
+function setListStyle(){
+    let images = document.querySelectorAll(".logoImg");
+    images.forEach((img) => {
+      img.style.display = 'none';
+    });
+    
+}
+
+function setCardsStyle(){
+  let images = document.querySelectorAll(".logoImg");
+  images.forEach((img) => {
+    img.style.display = 'block';
+  });
+}
