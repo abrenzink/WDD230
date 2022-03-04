@@ -7,7 +7,7 @@ body{
     text-align: center;
 }
 
-h1{
+h1, footer{
     margin: 35px 0;
     padding: 10px;
     color: snow;
