@@ -54,15 +54,51 @@ function displayCards(business) {
 
 function setListStyle(){
     let images = document.querySelectorAll(".logoImg");
+    let titles = document.querySelectorAll("section.bCard > h3");
+    let p = document.querySelectorAll("section.bCard > p");
+    let a = document.querySelectorAll("section.bCard > a");
+
     images.forEach((img) => {
       img.style.display = 'none';
+    });
+
+    titles.forEach((title) => {
+      title.style.fontSize = '.9rem';
+    });
+
+    p.forEach((p) => {
+      p.style.fontSize = '.8rem';
+      p.style.margin = '2px 0';
+      p.style.padding = '2px 0';
+    });
+
+    a.forEach((a) => {
+      a.style.fontSize = '.75rem';
     });
     
 }
 
 function setCardsStyle(){
   let images = document.querySelectorAll(".logoImg");
+  let titles = document.querySelectorAll("section.bCard > h3");
+  let p = document.querySelectorAll("section.bCard > p");
+  let a = document.querySelectorAll("section.bCard > a");
+
   images.forEach((img) => {
     img.style.display = 'block';
+  });
+
+  titles.forEach((title) => {
+    title.style.fontSize = '1rem';
+  });
+
+  p.forEach((p) => {
+    p.style.fontSize = '1rem';
+    p.style.margin = '2px 0';
+    p.style.padding = '2px 0';
+  });
+
+  a.forEach((a) => {
+    a.style.fontSize = '1rem';
   });
 }

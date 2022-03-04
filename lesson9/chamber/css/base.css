@@ -410,11 +410,13 @@ button.listBtn img, button.cardBtn img{
 .bCard{
 	max-width: 90%;
 	margin: 10px auto;
-	padding: 20px;
+	padding: 15px;
 	box-shadow: 0px 2px 8px #888888;
 }
 
-.bCard p{padding: 10px 0;}
+.bCard h3{font-size: 1rem;}
+
+.bCard p{padding: 5px 0; font-size: 1rem;}
 
 .bCard a{word-wrap: break-word;}
 
