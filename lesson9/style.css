@@ -24,3 +24,8 @@ section{
     flex-direction: column;
     align-items: center;
 }
+
+img{
+    border-radius: 50px;
+    border: 10px solid black;
+}

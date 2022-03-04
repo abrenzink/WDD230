@@ -35,7 +35,7 @@ function displayProphets(prophet) {
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   portrait.setAttribute('src', prophet.imageurl);
-  portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}, ${prophet.order} Latter-day Saint`);
+  portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}, the ${prophet.order} Latter-day Saint Prophet`);
   portrait.setAttribute('loading', 'lazy');
 
   
