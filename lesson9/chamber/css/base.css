@@ -381,3 +381,33 @@ form label.top input:required:valid{
 	font-size: 2.5rem;
 	margin: 20px 0;
 }
+
+
+/*------------------------------------DIRECTORY PAGE------------------------------------*/
+
+#listBtn{
+	max-width: 20%;
+	margin: 10px auto;
+}
+
+.bussCard{
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 2px 8px #888888;
+}
+
+.bussCard p{
+	
+	padding: 10px 0;
+}
+
+.bussCard a{word-wrap: break-word;}
+
+img.logoImg{
+	display: block;
+	width: 200px; /* width of container */
+    height: 120px; /* height of container */
+    object-fit: cover;
+	margin: 5px auto;
+}

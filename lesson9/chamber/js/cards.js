@@ -8,33 +8,53 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
-    const prophets = jsonObject['prophets'];
-    prophets.forEach(displayCards);
+    const business = jsonObject['business'];
+    business.forEach(displayCards);
   });
 
 
 
 function displayCards(business) {
-  // Create elements to add to the document
   let card = document.createElement('section');
-  let title = document.createElement('h2');
- 
-
-  // Add/append the section(card) with the h2 element
-  card.appendChild(portrait);
- 
-
-  // Change the textContent property of the h2 element to contain the prophet's full name
-  h2.textContent = `${business.name} ${business.lastname}`
-
-
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  portrait.setAttribute('src', business.imageurl);
-  portrait.setAttribute('alt', `Portrait of ${business.name}`);
-  portrait.setAttribute('loading', 'lazy'); 
-
+  let logo = document.createElement('img');
+  let title = document.createElement('h3');
+  let adress = document.createElement('p');
+  let phone = document.createElement('p');
+  let site = document.createElement('a');
   
+
+  card.className = 'bussCard';
+  logo.className = 'logoImg';
+  logo.setAttribute('src', business.logourl);
+  logo.setAttribute('alt', `Logo of ${business.name}`);
+  logo.setAttribute('loading', 'lazy');
+  site.setAttribute("href", business.site); 
+  site.setAttribute("target", "_blank"); 
+ 
+  card.appendChild(logo);
+  card.appendChild(title);
+  card.appendChild(adress);
+  card.appendChild(phone);
+  card.appendChild(site);
+
+  title.textContent = `${business.name}`;
+  adress.textContent = `${business.adress}`;
+  phone.textContent = `Phone: ${business.phone}`;
+  site.textContent = `${business.site}`;
 
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
+}
+
+
+/*----------------------------------------------TOGGLING LIST---------------------------------------------- */
+
+let listBtn = document.querySelector('logoImg');
+listBtn.onclick = toggleList;
+
+
+function toggleList(){
+
+  document.querySelector("#navigation").classList.toggle("open");
+
 }
