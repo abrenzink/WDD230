@@ -1,0 +1,88 @@
+{
+    "business": [
+      {
+        "name": "AMAZONAS GT",
+        "adress": "Rua Tito Bittencourt, 142 - Sao Francisco, Manaus - AM, 69.079-040",
+        "phone": "(208) 488-4989",
+        "site": "https://www.eletrobrasamazonasgt.com/",
+        "logourl": "assets/amazonasgt.png"
+      },
+      {
+        "name": "UNIMED DA AMAZONIA - FEDERACAO UNIMED DA AMAZONIA",
+        "adress": "Rua Rio Amapa, 374 - Nossa Senhora das Gracas, Manaus - AM, 69.053-150",
+        "phone": "(208) 488-4559",
+        "site": "https://www.unimedmanaus.com.br/",
+        "logourl": "assets/unimed.png"
+      },
+      {
+        "name": "BEMOL",
+        "adress": "TRAVESSA MARQUES DE SANTA CRUZ, 32 - CENTRO, MANAUS/AM",
+        "phone": "(208) 788-4559",
+        "site": "https://www.bemol.com.br/",
+        "logourl": "assets/bemol.png"
+      },
+      {
+        "name": "INNOVA",
+        "adress": "AVENIDA TORQUATO TAPAJOS, 5555 - TARUMA, MANAUS/AM",
+        "phone": "+55 (92) 38789080",
+        "site": "https://innova.com.br/",
+        "logourl": "assets/innova.png"
+      },
+      {
+        "name": "VALFILM AMAZONIA INDUSTRIA E COMERCIO LTDA",
+        "adress": "AVENIDA AVENIDA CUPIUBA, 617 - DISTRITO INDUSTRIAL, MANAUS/AM",
+        "phone": "+55 (92) 31868900",
+        "site": "https://valgroup.com.br/valfilm/a-valfilm/",
+        "logourl": "assets/valfilm.jpg"
+      },
+      {
+        "name": "DAIKIN DO AMAZONAS",
+        "adress": "RUA DO LUSO, 1567 - TARUMA-ACU, MANAUS/AM",
+        "phone": "+55 (92) 32127724",
+        "site": "https://www.daikin-am.com.br/",
+        "logourl": "assets/daikin.png"
+      },
+      {
+        "name": "CHIBATAO NAVEGACAO E COMERCIO LTDA",
+        "adress": "RUA ZEBU, 201 - COLONIA OLIVEIRA MACHADO, MANAUS/AM",
+        "phone": "+55 (92) 21291900",
+        "site": "http://www.grupochibatao.com.br/",
+        "logourl": "assets/chibatao.png"
+      },
+      {
+        "name": "GREE ELECTRIC APPLIANCES DO BRASIL LTDA.",
+        "adress": "AVENIDA DOS OITIS, 6360 - DIST INDUSTRIAL II, MANAUS/AM",
+        "phone": "+55 (92) 21236900",
+        "site": "https://gree.com.br/",
+        "logourl": "assets/gree.png"
+      },
+      {
+        "name": "VIVARA",
+        "adress": "AVENIDA ANDRE ARAUJO, 97 - ADRIANOPOLIS, MANAUS/AM",
+        "phone": "+55 (11) 51121840",
+        "site": "http://www.grupochibatao.com.br/",
+        "logourl": "assets/chibatao.png"
+      },
+      {
+        "name": "BRASIL NORTE BEBIDAS S/A",
+        "adress": "AVENIDA TORQUATO TAPAJOS, 5800 - COLONIA TERRA NOVA",
+        "phone": "+55 (92) 21212628",
+        "site": "http://www.brasilnortebebidas.com.br/",
+        "logourl": "assets/vivara.png"
+      },
+      {
+        "name": "MINERACAO TABOCA S A",
+        "adress": "AVENIDA CONSTANTINO NERY, ED EMPIRE CENTER, 2789 - CHAPADA, MANAUS/AM",
+        "phone": "+55 (92) 984381566",
+        "site": "https://www.mtaboca.com.br/Paginas/default.aspx",
+        "logourl": "assets/taboca.jpeg"
+      },
+      {
+        "name": "MANAUS AMBIENTAL S.A.",
+        "adress": "RUA DO BOMBEAMENTO, 1 - COMPENSA, MANAUS/AM",
+        "phone": "+55 (19) 34598300",
+        "site": "https://www.aguasdemanaus.com.br/",
+        "logourl": "assets/aguasmanaus.jpg"
+      }
+    ]
+  }
