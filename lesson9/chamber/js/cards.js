@@ -1,4 +1,4 @@
-const requestURL = 'data.json';
+const requestURL = 'https://abrenzink.github.io/wdd230/lesson9/chamber/data.json';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
