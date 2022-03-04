@@ -1,0 +1,383 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Andada Pro', serif;
+}
+
+h1, h3, button{
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	background: transparent;
+	border: none;
+}
+
+img[data-src] {
+	filter: blur(0.7em);
+}
+
+img{
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
+
+#popup a{
+	color: #1a0f7c;
+	font-family: 'PT Sans', sans-serif;
+}
+
+#popup button{
+	padding: 5px;
+}
+
+/*------------------------------------HEADER------------------------------------*/
+
+header, footer{
+	background-color: #762107;
+	width: 100%;
+	color: snow;
+}
+
+header{
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+}
+
+header .logo{
+	width: 50px;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	justify-self: center;
+}
+
+.title{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	grid-column: 2 / 6;
+	grid-row: 1 / 2;
+}
+
+.socialMedia{
+	grid-column: 5 / 6;
+	grid-row: 2 / 3;
+	display: flex;
+	align-items: center;
+	align-self: start;
+	margin-top: 10px;
+}
+
+.socialMedia img{
+	width: 50px;
+	height: 50px;
+}
+
+nav{
+	grid-column: 1 / 6;
+	grid-row: 2 / 3;
+}
+
+.open{
+	display: block;
+	text-align: center;
+}
+
+nav ul{
+	display: none;
+}
+
+nav ul li.active a{
+	background-color: rgba(0,0,0,0.2);;
+}
+
+nav ul li a:hover {
+	background-color:  rgba(0,0,0,0.3);
+}
+
+nav ul li a{
+	display: block;
+	font-size: 1.2rem;
+	color: snow;
+	padding: .8rem 2vw;
+	text-decoration: none;
+	border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav button{
+	font-size: 2.5rem;
+	color: rgba(0,0,0,0.5);
+	text-align: right;
+	margin: 10px;
+}
+
+#currentDate{
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid rgba(0,0,0,.2);
+	font-size: 1.1rem;
+	padding: 10px 0;
+	text-align: center;	
+	grid-column: 1 / 6;
+}
+
+/*--------------------------------------MAIN--------------------------------------*/
+
+.item{
+	background: #c9a297;
+	width: 92%;
+	margin: 10px auto;
+	padding: 10px;	
+}
+
+.item h3{
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.item p{
+	margin: 10px 0;
+	font-size: 1rem;
+}
+
+.item picture{
+	width: 100%;
+	height: 100%;
+}
+
+.hero{
+	padding: 0;
+	position: relative;
+}
+
+.hero section{
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+	right: 2vw;
+}
+
+.heroBackground {
+	/*background-image: url("../assets/water-meeting.jpg");
+	background-position: center;*/
+	width: 100%;
+	height: 100%;
+}
+
+.hero h2{
+	text-align: center;
+	padding: 15px 2px;
+	text-shadow: 2px 2px 8px snow;
+}
+
+.hero button{
+	background-color: #ACCE22;
+	font-size: 1rem	;
+	padding: 10px 15px;
+	border: 2px solid black;
+	border-radius: 50px;
+	max-width: 250px;
+	margin: 1vw auto;
+}
+
+.weather > div{
+	margin-top: 15px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.release p, .join p{
+	background-color: snow;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.2rem;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.join img{
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+}
+
+.spotlight{
+	background: snow;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.spotlight button{
+	background-color: #762107;
+	color: snow;
+	padding: 10px 15px;
+	border-radius: 50px;
+	max-width: 250px;
+	margin: 10px auto;
+}
+
+main{
+	padding: 2vw 2VW;
+}
+
+main h1{
+	text-align: center;
+	margin: 30px 20px 50px 20px;
+}
+
+
+/*----------------------------------FOOTER------------------------------------*/
+
+footer{
+	text-align: center;
+	padding: 3vw;
+}
+
+footer p{
+	border-top: 1px solid rgba(0,0,0,0.2);
+	padding: 15px;
+}
+
+.map{
+	padding: 15px;
+}
+
+.footerLogo{
+	width: 10vw;
+}
+
+/*----------------------------------DISCOVER PAGE------------------------------------*/
+
+.discover-page{
+	display: flex;
+	flex-direction: column;
+}
+
+.discover{
+	max-width: 90%;
+	margin: 25px auto 10px auto;
+}
+
+.discover img{
+	border-radius: 0 400px;
+	max-width: 100%;
+}
+
+
+figcaption{
+	text-align: right;
+	margin: 15px 0;
+}
+
+		
+.shown, #popup{
+	background-color: #ACCE22;
+	color: rgba(0,0,0,.9);
+	font-size: 1.2rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+	padding: 10px;
+	max-width: 500px;
+	position: fixed;
+	bottom: 30px;	
+}
+
+.hidden{
+	display: none;
+}
+
+/*--------------------------------------JOIN PAGE--------------------------------------*/
+
+form{
+	margin: 2rem auto;
+	background-color: #ffded4;
+}
+
+form h2{
+	text-align: center;
+	padding: 15px;
+}
+
+form fieldset{
+	margin: 1.5rem auto;
+	padding: .8rem;
+	border-radius: 10px;
+	max-width: 80%;
+}
+
+form legend{
+	padding: .2rem .8rem;
+	border: 1.5px solid rgba(0,0,0,0.5);
+}
+
+
+form label.top, form div{
+	display: block;
+	padding-top: .5rem;
+	margin: 10px auto;
+	max-width: 90%;
+}
+
+form label.top input, form label.top textarea{
+	display: block;
+	padding: .75rem;
+	width: 95%;
+	border-radius: 5px;
+}
+
+form label.sbs{
+	display: block;
+}
+
+form label.sbs input{
+	margin: 5px;
+	padding: .75rem;
+	font-weight: 700px;
+}
+
+form label.sbs span{
+	background-color: #762107;
+	color: snow;
+	padding: 5px 15px;
+	border-radius: 15px;
+	margin-left: 30px;
+}
+
+form input.send{
+	margin: 1.5rem 0 1.5rem 2.5rem;
+	padding: .8rem;
+	border-radius: 50px;
+	background-color: #ACCE22;
+}
+
+form label.top input:required{
+	border-left: red solid	 6px;
+}
+
+form label.top input:required:valid{
+	border-left: green solid 6px;
+}
+
+/*--------------------------------------THANK YOU PAGE--------------------------------------*/
+
+.thanks{
+	max-width: 90%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.thanks p{
+	margin-bottom: 50px;
+}
+
+.home{
+	background-color: #ACCE22;
+	border-radius: 50px;
+	padding: 15px 50px;
+	margin-bottom: 25px;
+	font-size: 1.5rem;
+}
+
+.thanksTitle{
+	font-size: 2.5rem;
+	margin: 20px 0;
+}
