@@ -58,6 +58,11 @@ function setListStyle(){
     let titles = document.querySelectorAll("section.bCard > h3");
     let p = document.querySelectorAll("section.bCard > p");
     let a = document.querySelectorAll("section.bCard > a");
+    let listBtn = document.querySelector(".listBtn");
+    let cardBtn = document.querySelector(".cardBtn");
+  
+    listBtn.classList.add('listBtn', 'activeBtn')
+    cardBtn.classList.remove("activeBtn");
 
     cards.forEach((card) => {
       card.style.margin = '0 auto';
@@ -89,6 +94,11 @@ function setCardsStyle(){
   let titles = document.querySelectorAll("section.bCard > h3");
   let p = document.querySelectorAll("section.bCard > p");
   let a = document.querySelectorAll("section.bCard > a");
+  let listBtn = document.querySelector(".listBtn");
+  let cardBtn = document.querySelector(".cardBtn");
+
+  cardBtn.classList.add('cardBtn', 'activeBtn')
+  listBtn.classList.remove("activeBtn");
 
   cards.forEach((card) => {
     card.style.margin = '20px auto';
@@ -111,4 +121,6 @@ function setCardsStyle(){
   a.forEach((a) => {
     a.style.fontSize = '1rem';
   });
+
+  
 }

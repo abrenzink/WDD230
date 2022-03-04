@@ -409,6 +409,10 @@ button.listBtn img, button.cardBtn img{
 	margin: 5px auto;
 }
 
+.activeBtn{
+	background-color: rgba(0,0,0,.4);
+}
+
 .bCard{
 	max-width: 90%;
 	margin: 20px auto;
