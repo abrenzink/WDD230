@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber website for WDD230, Brigham Young University Idaho">
+    
+    <title>Black River Chamber of Commerce Oficial Site</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cormorant:wght@300&family=PT+Sans+Caption&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/normalize.css">
+        
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="assets/favicon.png">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo"/> 
+        <div class="title">      
+            <h1>Black River</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <nav>
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socialMedia">
+            <a href="#"><img src="assets/instagram.png" alt="instagram icon"></a> 
+            <a href="#"><img src="assets/youtube.png" alt="youtube icon"></a> 
+        </div>
+        <div id="currentDate"></div>
+         
+    </header>
+   
+    <main>
+       
+        <form action="thankyou.html" method="get">
+            <h2>FORM</h2>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label class="top">
+                    First name*:
+                    <input type="text" id="fname" name="fname" required></label><br>
+                <label class="top">
+                    Last name*:
+                    <input type="text" id="lname" name="lname" required></label><br>
+                <label class="top">
+                    E-mail address:<input type="email" id="email" name="email" placeholder="yourname@email.com">
+                </label><br>
+                <label class="top">
+                    Celphone number:
+                    <input type="tel" id="phone" name="phone" placeholder="55  92  98566-6684">
+                </label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Business</legend>
+                <label class="top">
+                    Business position:
+                    <input type="text" id="businessPos" name="businessPos"></label><br>
+                
+                <label class="top">
+                    Business name*:
+                    <input type="text" id="businessName" name="businessName" required></label><br>
+                
+                <label class="top">
+                    Business description:
+                <textarea id="description" name="description" rows="6"></textarea></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Select a membership level:</div>
+                <label class="sbs"><input class="radio" type="radio" id="level1" name="membLevel" value="NP Membership"
+                    checked>Non-Profit
+                <span>Free</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+                <label class="sbs"><input class="radio" type="radio" id="level2" name="membLevel" value="Bronze Membership">Bronze
+                <span>$8.5</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+                <label class="sbs"><input class="radio" type="radio" id="level3" name="membLevel" value="Silver Membership">Silver
+                <span>$15</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+                <label class="sbs"><input class="radio" type="radio" id="level4" name="membLevel" value="Gold Membership">Gold
+                <span>$30</span></label>
+                <div>Be found for other businesses being listed in the Black River 
+                    Chamber of Commerce.</div>
+            </fieldset>
+      
+            <label class="sendBtn"><input class="send" name="button" type="button" value="Join the Chamber"></label>
+
+            <input type="hidden" id="postId" name="postId" value="datetime">
+
+            <div class="membershipInfo">
+
+            </div>
+        </form>
+        
+    </main>
+
+    <footer>
+        <img class="footerLogo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo" /> 
+        <div class="footerTitle">      
+            <h3>Black River</h3>
+            <h4>Chamber of Commerce</h4>
+            <h4>Rua Franz Schubert, 330 - Flores, Manaus | Brazil</h4>
+        </div>
+        <div class="map">
+            <div>email@blackriverchamber.com</div>
+            <div>+55 98 99999-9899</div>
+            <div>🌎 Location Map</div>
+        </div>
+        <p>&copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | 🏛 BYU-Idaho - WDD230 Project | Last Update: <span id="lastUpdate"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/datetime.js"></script>
+</body>
+</html>
