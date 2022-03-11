@@ -65,7 +65,17 @@
         </div>
         <div class="item weather">
             <h3>Weather</h3>
-            <div id="ww_91ce5843d013e" v='1.20' loc='id' a='{"t":"responsive","lang":"en","ids":["wl3182"],"cl_bkg":"#689F38","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#FFFFFF","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"3","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","cl_odd":"#0000000a"}'>Weather for the Following Location: <a href="https://2ua.org/bra/manaus/map/" id="ww_91ce5843d013e_u" target="_blank">Manaus, Brazil</a></div><script async src="https://srv2.weatherwidget.org/js/?id=ww_91ce5843d013e"></script>
+            <div>
+                <div id="icon-div">
+                    <figure><img src="" alt="" id="weathericon"/></figure>
+                    <p id="current-temp"></p>
+                </div>
+                <div id="cond-div">
+                    <p id="condition"></p>
+                    <p>Wind speed: <span id="wind-speed"></span></p>
+                    <p>Wind chill: <span id="wind-chill"></span></p>
+                </div>
+            </div>
         </div>
         <div class="item release">
             <h3>Business Call 📢</h3>
@@ -123,6 +133,7 @@
     <script src="js/script.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/datetime.js"></script>
+    <script src="js/weather.js"></script>
     
 </body>
 </html>

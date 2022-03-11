@@ -124,7 +124,7 @@ nav button{
 /*--------------------------------------MAIN--------------------------------------*/
 
 .item{
-	background: #c9a297;
+	background: #ecc6ba;
 	width: 92%;
 	margin: 10px auto;
 	padding: 10px;	
@@ -181,8 +181,29 @@ nav button{
 }
 
 .weather > div{
+	background-color: snow;
 	margin-top: 15px;
 	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+	padding: 10px;
+}
+
+#icon-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cond-div{
+	text-align: center;
+}
+
+#weathericon{
+	margin: 0;
+	width: 5em;
+}
+
+#condition{
+	border-bottom: 1px solid black;
 }
 
 .release p, .join p{
