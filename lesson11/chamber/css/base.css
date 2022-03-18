@@ -245,7 +245,7 @@ nav button{
 	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
 }
 
-.spotlight button{
+.event button{
 	background-color: #762107;
 	color: snow;
 	border-radius: 50px;
@@ -253,18 +253,18 @@ nav button{
 	margin: 10px auto;
 }
 
-.spotlight button:hover{
+.event button:hover{
 	background-color: rgb(51, 6, 0);
 }
 
-.spotlight button a{
+.event button a{
 	text-decoration: none;
 	color: snow;
 	display: block;
 	padding: 12px 30px;
 }
 
-.spotlight button:hover a{
+.event button:hover a{
 	text-decoration: none;
 	color: snow;
 }
