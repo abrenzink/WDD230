@@ -5,7 +5,7 @@
 	font-family: 'Andada Pro', serif;
 }
 
-h1, h3, button{
+h1, h3{
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
 	background: transparent;
@@ -152,9 +152,11 @@ nav button{
 
 .hero section{
 	position: absolute;
-	top: 2vw;
-	left: 2vw;
-	right: 2vw;
+	padding: 10px 0;
+	top: 0vw;
+	left: 0vw;
+	right: 0vw;
+	background-color: rgba(0,0,0,.6);
 }
 
 .heroBackground {
@@ -164,20 +166,36 @@ nav button{
 	height: 100%;
 }
 
-.hero h2{
+.hero h1{
+	color: snow;
 	text-align: center;
-	padding: 15px 2px;
-	text-shadow: 2px 2px 8px snow;
+	padding: 5px 8px;
 }
 
 .hero button{
+	position: absolute;
 	background-color: #ACCE22;
 	font-size: 1rem	;
-	padding: 10px 15px;
 	border: 2px solid black;
 	border-radius: 50px;
-	max-width: 250px;
-	margin: 1vw auto;
+	top: 110px;
+	left: 2vw;
+	right: 2vw;
+}
+
+.hero button:hover{
+	background-color: rgb(51, 6, 0);
+}
+
+.hero button a{
+	color: black;
+	font-size: 1.1em;
+	display: block;
+	padding: 12px 30px;
+}
+
+.hero button:hover a{
+	color: snow;
 }
 
 .weather > div{
@@ -230,21 +248,30 @@ nav button{
 .spotlight button{
 	background-color: #762107;
 	color: snow;
-	padding: 10px 15px;
 	border-radius: 50px;
 	max-width: 250px;
 	margin: 10px auto;
 }
 
+.spotlight button:hover{
+	background-color: rgb(51, 6, 0);
+}
+
+.spotlight button a{
+	text-decoration: none;
+	color: snow;
+	display: block;
+	padding: 12px 30px;
+}
+
+.spotlight button:hover a{
+	text-decoration: none;
+	color: snow;
+}
+
 main{
 	padding: 2vw 2VW;
 }
-
-main h1{
-	text-align: center;
-	margin: 30px 20px 50px 20px;
-}
-
 
 /*----------------------------------FOOTER------------------------------------*/
 
