@@ -1,10 +1,6 @@
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3663517&units=imperial&appid=6e78c57483005f7c22d3a70888f92e0e";
 
 fetch(apiURL).then((response) => response.json()).then((jsObject) => {
-    console.log(jsObject);
-    
-    
-    
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const temp = jsObject.main.temp;
     const weatherDesc = jsObject.weather[0].description;
