@@ -128,5 +128,4 @@ function setCardsStyle(){
     a.style.fontSize = '1rem';
   });
 
-  
 }
