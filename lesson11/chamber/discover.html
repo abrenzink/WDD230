@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber website for WDD230, Brigham Young University Idaho">
+    
+    <title>Black River Chamber of Commerce Oficial Site</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cormorant:wght@300&family=PT+Sans+Caption&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/normalize.css">
+        
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="assets/favicon.png">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo"/> 
+        <div class="title">      
+            <h1>Black River</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <nav>
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a class = "active" href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socialMedia">
+            <a href="#"><img src="assets/instagram.png" alt="instagram icon"></a> 
+            <a href="#"><img src="assets/youtube.png" alt="youtube icon"></a> 
+        </div>
+        <div id="currentDate"></div>
+         
+    </header>
+   
+    <main>
+        <h1>Discover the most beautiful forest in the world</h1>
+        <div class="discover-page">
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/amazon-theatre-in-manaus-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/amazon-theatre-in-manaus-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/amazon-theatre-in-manaus-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/amazon-theatre-in-manaus-original.jpg">
+                <img src="assets/amazon-theatre-in-manaus-original.jpg" 
+                    data-src="assets/amazon-theatre-in-manaus-200px.jpg"
+                    alt="Amazon Theater in Manaus">
+                <figcaption>Amazon Theater in Manaus</figcaption>
+            </figure>
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/amazon-stadium-manaus-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/amazon-stadium-manaus-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/amazon-stadium-manaus-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/amazon-stadium-manaus-original.jpg">
+                <img src="assets/amazon-stadium-manaus-200px.jpg" 
+                    data-src="assets/amazon-stadium-manaus-original.jpg"
+                    alt="Manaus port">
+                <figcaption>Manaus Amazon Stadium</figcaption>
+            </figure>
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/vitoria-regia-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/vitoria-regia-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/vitoria-regia-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/vitoria-regia-1200px.jpg">
+                <img src="assets/vitoria-regia-200px.jpg"
+                    data-src="assets/vitoria-regia-original.jpg"
+                    alt="Vitorias Regias in the river">
+                <figcaption>Vitorias Regias</figcaption>
+            </figure>
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/amazon-rainforest-boat-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/amazon-rainforest-boat-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/amazon-rainforest-boat-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/amazon-rainforest-boat-original.jpg">
+                <img src="assets/amazon-rainforest-boat-200px.jpg" 
+                    data-src="assets/amazon-rainforest-boat-original.jpg" 
+                    alt="Boat on the Amazon Rainforest river">
+                <figcaption>Boats on the Amazon River</figcaption>
+            </figure>
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/manaus-airport-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/manaus-airport-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/manaus-airport-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/manaus-airport-original.jpg">
+                <img src="assets/manaus-airport-200px.jpg" 
+                    data-src="assets/manaus-airport-original.jpg"
+                    alt="Manaus airport top view">
+                <figcaption>Manaus Airport</figcaption>
+            </figure>
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/manaus-port-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/manaus-port-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/manaus-port-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/manaus-port-original.jpg">
+                <img src="assets/manaus-port-200px.jpg" 
+                    data-src="assets/manaus-port-original.jpg"    
+                    alt="Manaus port">
+                <figcaption>Manaus Port</figcaption>
+            </figure>
+
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/amazon-forest-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/amazon-forest-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/amazon-forest-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/amazon-forest-original.jpg">
+                <img src="assets/amazon-forest-original.jpg" 
+                    data-src="assets/amazon-forest-original.jpg"
+                    alt="Amazon Rainforest aerial view">
+                <figcaption>Amazon Rainforest aerial view</figcaption>
+            </figure>
+
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/iranduba-bridge-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/iranduba-bridge-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/iranduba-bridge-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/iranduba-bridge-original.jpg">
+                <img src="assets/iranduba-bridge-200px.jpg" 
+                    data-src="assets/iranduba-bridge-original.jpg"
+                    alt="Iranduba Brigde">
+                <figcaption>Iranduba Brigde</figcaption>
+            </figure>
+
+            <figure class="discover">
+                <source media="(max-width: 400px)" srcset="assets/manaus-market-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/manaus-market-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/manaus-market-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/manaus-market-original.jpg">
+                <img src="assets/manaus-market-original.jpg" 
+                    data-src="assets/manaus-market-original.jpg"
+                    alt="Manaus market">
+                <figcaption>Manaus Market</figcaption>
+            </figure>  
+            
+        </div>
+    </main>
+
+    <footer>
+        <img class="footerLogo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo" /> 
+        <div class="footerTitle">      
+            <h3>Black River</h3>
+            <h4>Chamber of Commerce</h4>
+            <h4>Rua Franz Schubert, 330 - Flores, Manaus | Brazil</h4>
+        </div>
+        <div class="map">
+            <div>email@blackriverchamber.com</div>
+            <div>+55 98 99999-9899</div>
+            <div>🌎 Location Map</div>
+        </div>
+        <p>
+            &copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | 🏛 BYU-Idaho - WDD230 Project | Last Update: <span id="lastUpdate"></span>
+           <br> Number of days between your last visit to this page: <span id="numDays"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/localStorage.js"></script>
+</body>
+</html>

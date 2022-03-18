@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber website for WDD230, Brigham Young University Idaho">
+    
+    <title>Black River Chamber of Commerce Oficial Site</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cormorant:wght@300&family=PT+Sans+Caption&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/normalize.css">
+        
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="assets/favicon.png">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo"/> 
+        <div class="title">      
+            <h1>Black River</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <nav>
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socialMedia">
+            <a href="#"><img src="assets/instagram.png" alt="instagram icon"></a> 
+            <a href="#"><img src="assets/youtube.png" alt="youtube icon"></a> 
+        </div>
+        <div id="currentDate"></div>
+         
+    </header>
+   
+    <main>
+        <div class="buttons">
+            <button class="listBtn" onclick = "setListStyle()"><img src="assets/list.png" alt="list icon"></button>
+            <button class="cardBtn" onclick = "setCardsStyle()"><img src="assets/cards.png" alt="cards icon"></button>
+        </div>
+        <div class="cards"></div>
+    </main>
+  
+
+    <footer>
+        <img class="footerLogo" src="assets/blackriverlogo.svg" alt="Black River Chamber of Commerce Logo" /> 
+        <div class="footerTitle">      
+            <h3>Black River</h3>
+            <h4>Chamber of Commerce</h4>
+            <h4>Rua Franz Schubert, 330 - Flores, Manaus | Brazil</h4>
+        </div>
+        <div class="map">
+            <div>email@blackriverchamber.com</div>
+            <div>+55 98 99999-9899</div>
+            <div>🌎 Location Map</div>
+        </div>
+        <p>&copy;<span id="currentYear"></span> Black River Chamber | Andrea Brenzink | 🏛 BYU-Idaho - WDD230 Project | Last Update: <span id="lastUpdate"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/cards.js"></script>
+</body>
+</html>

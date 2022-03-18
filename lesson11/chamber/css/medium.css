@@ -1,0 +1,121 @@
+@media only screen and (min-width: 45.5rem){
+    
+    .shown, #popup{
+        right: 3vw;
+    }
+    
+    nav{
+        padding: 10px 0;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        list-style-type: none;
+    }
+
+    #navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba(0,0,0,0.2);
+    }
+
+    nav ul li a{
+        border: none;
+    }
+
+    header .logo{
+        margin: 0 15px;
+        justify-self: right;
+    }
+
+    .socialMedia{
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+
+    .spotParent{
+        display: flex;
+        gap: 15px;
+    }
+
+    footer{
+        padding: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footerLogo{
+        justify-self: end;
+        width: 7vw;
+    }
+
+    .footerTitle{
+        text-align: left;
+        grid-column: 2/3;
+    }
+
+    .map{
+        grid-column: 3/5;
+    }
+
+    footer p{
+        grid-column: 1/5;
+    }
+
+    .discover img:hover{
+        border-radius: 10px;
+    }
+
+    form{
+        max-width: 70%
+    }
+
+    /*------------------------------------DIRECTORY PAGE------------------------------------*/
+
+    div.cardStyle{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.listStyle{
+	
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bCard{
+        min-width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+        box-shadow: 0px 2px 5px #888888;
+    }
+
+    .bCard h3{font-size: .9rem;}
+
+    .bCard p{
+        padding: 2px 0; 
+        font-size: .8rem;
+        margin: 2px 0;
+    }
+
+    .bCard a{
+        word-wrap: break-word;
+        font-size: .75rem;
+    }
+
+    img.logoImg{
+        display: none;
+        width: 200px; /* width of container */
+        height: 120px; /* height of container */
+        object-fit: cover;
+        margin: 5px auto;
+    }
+
+}
