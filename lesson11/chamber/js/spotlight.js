@@ -64,38 +64,4 @@ function displayCards(business) {
 
   // Add/append the existing HTML div with the cards class with the section(card)
   spot.appendChild(card);
-
-  setCardsStyle();
-}
-
-function setCardsStyle(){
-  let div = document.querySelector(".spotlight");
-  let cards = document.querySelectorAll(".spotCard");
-  let images = document.querySelectorAll(".logo");
-  let titles = document.querySelectorAll("section.spotCard > h4");
-  let p = document.querySelectorAll("section.spotCard > p");
-  let a = document.querySelectorAll("section.spotCard > a");
-
-  cards.forEach((card) => {
-    card.style.margin = '20px auto';
-  });
-
-  images.forEach((img) => {
-    img.style.display = 'block';
-  });
-
-  titles.forEach((title) => {
-    title.style.fontSize = '1rem';
-  });
-
-  p.forEach((p) => {
-    p.style.fontSize = '1rem';
-    p.style.margin = '2px 0';
-    p.style.padding = '2px 0';
-  });
-
-  a.forEach((a) => {
-    a.style.fontSize = '1rem';
-  });
-
 }

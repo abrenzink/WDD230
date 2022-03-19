@@ -65,7 +65,7 @@
     }
 
     .hero button{
-        top: 320px;
+        top: 500px;
     }
 
     .weather{
@@ -101,5 +101,12 @@
     div.cardStyle{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*------------------------------------CONTACT PAGE------------------------------------*/
+
+    div.contactDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -118,4 +118,22 @@
         margin: 5px auto;
     }
 
+    /*------------------------------------CONTACT PAGE------------------------------------*/
+
+    .contact h1{
+        margin-left: 20px 
+    }
+
+    .contact figure{
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .contact p{
+        max-width: 85%;
+    }
+    form.contact{
+        max-width: 85%;
+    }
+
 }

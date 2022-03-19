@@ -125,9 +125,9 @@ nav button{
 
 .item{
 	background: #ecc6ba;
-	width: 92%;
+	width: 95%;
 	margin: 10px auto;
-	padding: 10px;	
+	padding: 20px;	
 }
 
 .item h3{
@@ -175,10 +175,9 @@ nav button{
 .hero button{
 	position: absolute;
 	background-color: #ACCE22;
-	font-size: 1rem	;
-	border: 2px solid black;
+	font-size: 1rem;
 	border-radius: 50px;
-	top: 110px;
+	top: 80px;
 	left: 2vw;
 	right: 2vw;
 }
@@ -187,14 +186,14 @@ nav button{
 	background-color: rgb(51, 6, 0);
 }
 
-.hero button a{
+.hero a button {
 	color: black;
 	font-size: 1.1em;
 	display: block;
 	padding: 12px 30px;
 }
 
-.hero button:hover a{
+.hero a button:hover{
 	color: snow;
 }
 
@@ -245,8 +244,6 @@ nav button{
 	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
 }
 
-
-
 .event button{
 	background-color: #762107;
 	color: snow;
@@ -259,14 +256,15 @@ nav button{
 	background-color: rgb(51, 6, 0);
 }
 
-.event button a{
+.event a button{
 	text-decoration: none;
 	color: snow;
 	display: block;
 	padding: 12px 30px;
+	margin-top: 50px
 }
 
-.event button:hover a{
+.event a button:hover{
 	text-decoration: none;
 	color: snow;
 }
@@ -485,13 +483,21 @@ img.logoImg{
 
 /*------------------------------------SPOTLIGHT BUSINESS------------------------------------*/
 
+.spotCard section{
+	margin: 20px auto;
+}
+
+.spotCard img{
+	display: block;
+}
+
 .spotCard a{
 	text-decoration: none;
 	color: black
 }
 
 .spotCard a:hover{
-	color: rgb(163, 58, 16)
+	color: rgb(163, 58, 16);
 }
 
 .spotCard{
@@ -511,6 +517,9 @@ img.logoImg{
 	padding: 10px; 
 	font-size: 1rem;
 	text-align: center;
+	font-size: 1rem;
+   	margin: 2px 0;
+    padding: 2px 0;
 }
 
 img.logo{
@@ -518,4 +527,43 @@ img.logo{
 	max-width: 100%; /* width of container */
     object-fit: cover;
 	margin: 5px auto;
+}
+
+/*------------------------------------CONTACT PAGE------------------------------------*/
+
+div.contact{
+	position: relative;
+	margin-top: 150px;
+}
+
+.contact h1{
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0 10px;
+}
+
+.contact img{
+	width: 100%
+}
+
+.contact section{
+	position: absolute;
+	top: 80px;
+}
+
+.contact p{
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 15px;
+	margin: 0 auto;
+	max-width: 85%;
+}
+
+form.contact{
+	margin: 1em auto;
+	width: 100%;
+	background-color: transparent;
+}
+
+form.contact input{
+	padding: 10px 50px;
 }

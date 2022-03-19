@@ -46,14 +46,25 @@
     </header>
    
     <main>
-       
-        <div>
-            <h1>Contact the Chamber</h1>
-            <p>Send us your questions using the form below. We will respond
+       <div class="contactDiv">
+        <div class="contact">
+            <figure>
+                <source media="(max-width: 400px)" srcset="assets/manaus-market-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/manaus-market-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/manaus-market-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/manaus-market-original.jpg">
+                <img src="assets/manaus-market-original.jpg" 
+                    data-src="assets/manaus-market-original.jpg"
+                    alt="Manaus market">
+            </figure>
+            <section>
+                <h1>Contact the Chamber</h1>
+            </section>
+            <p>Send us your questions using the form. We will respond
                 promptly to your inquiry.
             </p>
         </div>
-        <form action="thankyou.html" method="get">
+        <form class="contact" action="thankyou.html" method="get">
             <h2>Contact Information</h2>
             <fieldset>
                 <legend>Personal</legend>
@@ -71,30 +82,8 @@
                     Coments/Questions
                 <textarea id="description" name="description" rows="6"></textarea></label><br>
             </fieldset>
-
-            <fieldset>
-                <legend>Membership Level</legend>
-                <div>Select a membership level:</div>
-                <label class="sbs"><input class="radio" type="radio" id="level1" name="membLevel" value="NP Membership"
-                    checked>Non-Profit
-                <span>Free</span></label>
-                <div>Be found for other businesses being listed in the Black River 
-                    Chamber of Commerce.</div>
-                <label class="sbs"><input class="radio" type="radio" id="level2" name="membLevel" value="Bronze Membership">Bronze
-                <span>$8.5</span></label>
-                <div>Be found for other businesses being listed in the Black River 
-                    Chamber of Commerce.</div>
-                <label class="sbs"><input class="radio" type="radio" id="level3" name="membLevel" value="Silver Membership">Silver
-                <span>$15</span></label>
-                <div>Be found for other businesses being listed in the Black River 
-                    Chamber of Commerce.</div>
-                <label class="sbs"><input class="radio" type="radio" id="level4" name="membLevel" value="Gold Membership">Gold
-                <span>$30</span></label>
-                <div>Be found for other businesses being listed in the Black River 
-                    Chamber of Commerce.</div>
-            </fieldset>
       
-            <label class="sendBtn"><input class="send" name="button" type="button" value="Join the Chamber"></label>
+            <label class="sendBtn"><input class="send" name="button" type="button" value="Send"></label>
 
             <input type="hidden" id="postId" name="postId" value="datetime">
 
@@ -102,7 +91,7 @@
 
             </div>
         </form>
-        
+    </div>
     </main>
 
     <footer>
